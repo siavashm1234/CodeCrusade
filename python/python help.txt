@@ -1,0 +1,139 @@
+# price = 10 --- integers ---int for string into integers
+# rating = 10.5 ---  float ---float for string into float
+# name = "stone" --- string ---str for integer to string
+# alive = False --- boolean --- bool for string into boolean
+# name = input("what is your name")
+# "" (one line)   """""" (multiple lines)
+# [] shows the index ex= "python" and [0]=p [-1]=n [0:3]=pyt [1:]=ython [:5]=[0:5] []=python
+# [] makes list ex= ["me" , "you"]
+# you can use the following command to change a list:
+# append()	Adds an element at the end of the list
+# clear()	Removes all the elements from the list
+# copy()	Returns a copy of the list
+# count()	Returns the number of elements with the specified value
+# extend()	Add the elements of a list (or any iterable), to the end of the current list
+# index()	Returns the index of the first element with the specified value
+# insert()	Adds an element at the specified position
+# pop()	Removes the element at the specified position
+# remove()	Removes the first item with the specified value
+# reverse()	Reverses the order of the list
+# sort()	Sorts the list
+# split(x)    it takes a string and every time it finds x it will separate the string and gives you alist of that split string
+# + - ** / //(for integers) %(the remainder of division) round(round a number) abs
+# import math for mathing
+# how to if:
+# is_hot = False
+# is_cold = False
+# if is_hot:
+# elif is_cold:
+# else:
+# == (compare) != (not equal)
+# while i < 3
+# break (end program)
+# wile (this is a loop foe when you need multiple commands in an action)
+# for loop is used to print lists ex= for item in ["me" , "you"] or for item in range (1,10,2) note that the third number defines how many steps for loop takes
+# in for loop you can also use "not in" ex=  if item not in list
+#  we can   have a lis of multiple lists ex= matrix=[ [2,2,3,4] , ['me' , 'you' , 'us']] and print matrix([0][0])= 2
+# tuple is a list that can not be modified ex list= (3,3)
+# unpacking is a way in python to write less code ex=
+    reallyreallybiglist=(1,2,3)
+       this is a lot of code = reallyreallybiglist[0]*reallyreallybiglist[1]*reallyreallybiglist[2]
+        this is less code    =     x,y,z = reallyreallybiglist
+                                   x*y*z
+# dictionary is a way to store key values ex=
+   customer = {
+         "name": "john"
+         "age": 1234
+         "is_verify":yes}
+   print(customer[name])
+   you cna use get method to take items from a dictionary
+# you can use def to make a funktion witch is a chunk of code that can be used.
+  def greet_user():
+     print("hi user")
+     print("have a good day")
+  now you can use this piece of code by typing greet_user()
+#in the def hi_user(x) the x can be a paramilitary that changes the funktion
+   def hi_user(first_name, last name):
+      print(f"hello {first_name} {last name}")
+#if you want a funktion to return  a value you have to use the return funktion
+   def square(number):
+        return number * number
+   result=square(3)
+   print result
+#you can use try except blocks to prevent your program from crashing
+   try:
+      age=int(input(Age:))
+      print (age)
+   except:valueError:
+          print(invalid value)
+#things like string or float are classes but you can make your own class:
+   class point:
+       def move(self):
+           print("move")
+       def draw(self)
+           print(draw)
+ now we can set a variable to be this new point calss:
+   x = point()
+ now with . operator x can have draw and move:
+   x.move
+ this objects can have different attributes:
+   x.A = 10
+   x.B = 20
+   print(x.A)
+#when you create a new class it can take in variables:
+  class point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+
+  cord = point(10, 20)
+  print(cord.x)
+#diffrent classes can inherit code from other classes:
+  class mammal:
+    def walk(self):
+        print("walk")
+
+
+  class Dog(mammal):
+      pass
+
+
+  class Cat(mammal):
+      pass  # pass is used here because python doesn't like empty classes
+
+
+  Dog = Dog()
+  Dog.walk()
+#you can use import code and functions from other files the files witch you import from are called modules
+ in another file :
+
+ def square(number):
+        return number * number
+
+ in the main file :
+
+   import helloworld
+  print(helloworld.square(2))
+
+
+ or you can write it like this:
+  from  #name_of_the_module import square
+
+   print(square(2))
+#each python file that has code in it is a module and a package is a container for multiple modules
+ a python directory is a folder that can have any necessary file for a project
+ if you want to make a new directory you can right-click your project and add a new one same with a package as packages are an special type of directory
+ that you can import module from.
+ when we want import a module from a package it goes like this:
+ from name_of_the_package.name_of_the_module import name_of_the_def
+#python has many built in modules that can do anything from sending email to making random numbers.
+ you can find them in python3 modules index and use the import tool to use them
+#the random module can be used to pick random item from a list or pick a random number
+ example: import random
+          for n in range(3):
+            print(random.random())
+#random module has dot operators such as:
+ .random():pick a number between 1 and 0
+ .randint(a,b):pick a number between a and b
+ .choice(a):pick a random value from list a
